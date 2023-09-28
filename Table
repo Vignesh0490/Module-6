@@ -1,0 +1,13 @@
+
+create table technologies(
+t_id int,
+tech_id int,
+tech_name varchar(20),
+technology varchar(20));
+
+insert into technologies values(1,1,"java training","java");
+insert into technologies values(2,2,"python training","python");
+insert into technologies values(3,3,"DS training","Algorithm");
+
+create index idx_tech
+ON technologies (t_id,tech_name,tech_id,technology);
