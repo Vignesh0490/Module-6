@@ -17,3 +17,14 @@ Example 1 - Outputs:
 2. Detailed test execution logs highlighting test successes and failures.
 
 currency api call that api using mockito
+------------------------------------------------------------------------------------------
+2. Scenario:
+You are tasked with testing a complex, highly interactive e-commerce website that relies on dynamic elements.
+
+Example 1 - Inputs:
+1. Complex web pages with dynamic content.
+2. Integrate with Selenium scripts, Run from TestNG,update Testng report , Report Results and Anlyze
+
+Example 1 - Outputs:
+1. A TestNG suite with comprehensive test cases covering user interactions.
+2. Screenshot comparisons to detect the reports validity
