@@ -15,3 +15,5 @@ Example 1 - Inputs:
 Example 1 - Outputs:
 1. JUnit test cases.
 2. Detailed test execution logs highlighting test successes and failures.
+
+currency api call that api using mockito
