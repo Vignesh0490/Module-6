@@ -1,0 +1,3 @@
+create an application of banking where we have a method which can calculate the emi and one more method which will calculate the complex interest rate for the banking , 
+The complex rate has two parameters which are rate with a specified period of interest accrual and the capital growth coefficient.
+and then create 2 or more than 2 test cases using junit for testing your application
