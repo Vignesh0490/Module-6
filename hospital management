@@ -1,0 +1,43 @@
+-- https://www.mycompiler.io/view/67EoMZpIQXt
+use atlasnew;
+create table hospitalstaff(
+e_id int primary key auto_increment,
+e_name varchar(50),
+e_position varchar(50),
+e_department varchar(50));
+insert into hospitalstaff values( 101, "Vignesh", "Junior Doctor", "Ortho");
+insert into hospitalstaff values(102, "Mugesh", "Surgical Attending Physician", "ENT");
+insert into hospitalstaff values(103, "Pavithra", "Senior Doctor", "Gynocologist");
+create table patient(
+p_id int primary key auto_increment,
+p_name varchar(50),
+p_phone int,
+p_datein int,
+p_dateout int,
+p_insurance_id int);
+alter table patient
+drop column p_phone;
+alter table patient
+add column p_phone double after p_name;
+select * from patient;
+insert into patient values( 201, "William", 9865678925, 09/10/2023, 12/10/2023, 7894);
+insert into patient values (202, "Shahid", 9589768721, 8/10/2023, 9/10/2023, 8543);
+insert into patient values (203, "Arun", 8523697412, 6/10/2023, 7/10/2023, 536);
+drop table patient;
+create table patient(
+p_id int primary key auto_increment,
+p_name varchar(50),
+p_phone int,
+p_datein int,
+p_dateout int,
+p_insurance_id int,
+foreign key(p_id) references hospitalstaff(e_id));
+select * from patient;
+alter table patient
+add constraint fk_patient_id -- to give a new name
+foreign key(p_id) references hospitalstaff(e_id);
+delete from patient;
+select * from patient;
+
+
+
