@@ -1,0 +1,9 @@
+Database Activities:
+Bulk Insert: Updates a table using Bulk operations using the specific database driver implementation. Will fallback to Insert Data Table if the database driver does not support Bulk operations.
+Bulk Update: Updates a compatible DataTable in an existing Table. The activity also updates all the columns that are not in the collection of column names used as a primary key. Returns the number of rows affected.
+Connect: Connects to a database by using a standard connection string.
+Disconnect: Closes a connection to a database.
+Execute Non-Query: Executes a non-query statement on a database. For UPDATE, INSERT, and DELETE statements, the return value is the number of rows affected by the command. For all other types of statements, the return value is -1.
+Execute Query: Executes a query on a database and returns the query result in a Datatable.
+Insert : Inserts a compatible DataTable variable in an existing Table. Returns the number of rows affected. If the constraints on the table aren't met, the activity will not be completed successfully and all the written rows will be saved.
+Start Transaction: Connects to a database and features a Sequence that can perform multiple transactions with the database. It returns a DatabaseConnection variable, providing scope for Database activities.
